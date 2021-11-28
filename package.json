@@ -15,5 +15,10 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^1.21.1",
+    "react-hover-animation": "^2.1.1",
+    "stripe": "^8.191.0"
   }
 }
