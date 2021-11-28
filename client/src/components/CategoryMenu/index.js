@@ -4,6 +4,9 @@ import { useQuery } from '@apollo/client';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { useStoreContext } from "../../utils/GlobalState";
 import { idbPromise } from "../../utils/helpers";
+import { AnimationWrapper } from 'react-hover-animation';
+ 
+
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -45,7 +48,9 @@ function CategoryMenu() {
 
       <br/>
       {categories.map((item) => (
+        <AnimationWrapper>
         <button className="btn success"
+
 
           key={item._id}
           onClick={() => {
@@ -54,6 +59,7 @@ function CategoryMenu() {
         >
           {item.name}
         </button>
+        </AnimationWrapper>
       ))}
     </div>
   );
