@@ -41,11 +41,12 @@ function CategoryMenu() {
   return (
     <div style={{display: 'flex',
      justifyContent: 'flex-end',
-     justifyContent:'space-between',}}>
+    }}>
 
       <br/>
       {categories.map((item) => (
-        <button
+        <button className="btn success"
+
           key={item._id}
           onClick={() => {
             handleClick(item._id);
