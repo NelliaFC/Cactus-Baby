@@ -39,7 +39,10 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
+    <div style={{display: 'flex',
+     justifyContent: 'flex-end',
+     justifyContent:'space-between',}}>
+
       <br/>
       {categories.map((item) => (
         <button

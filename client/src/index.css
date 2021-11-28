@@ -1,16 +1,18 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: #99f19d;
+  --secondary: #ee8fa3;
+  --tertiary: #ec305f;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
+  --font-style: 'Roboto','sans-serif';
 }
 
 * {
   box-sizing: border-box;
+
 }
 
 html,
@@ -21,7 +23,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: var(--font-style);
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -34,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -91,12 +93,12 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  /* border-radius: .5rem; */
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--light);
 }
 
 button:hover {
