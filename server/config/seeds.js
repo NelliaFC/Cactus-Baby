@@ -18,43 +18,158 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Spiney Cactus',
+      name: 'Waterfall Lilly',
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cacti2.jpeg',
+      image: 'size1.jpg',
       category: categories[0]._id,
       price: 9.99,
       quantity: 3
     },
     {
-      name: 'Another spiney Cactus',
+      name: 'A Row of Rainbow',
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: '3.jpeg',
+      image: 'size2.jpg',
       category: categories[0]._id,
       price: 6.99,
       quantity: 6
     },
     {
-      name: 'Toilet Paper',
-      category: categories[1]._id,
+      name: 'Little Guy',
+      category: categories[0]._id,
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
+      image: 'size3.jpg',
+      price: 7.99,
+      quantity: 20
+    },
+    {
+      name: 'infinity Pool',
+      category: categories[0]._id,
+      description:
+        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+      image: 'size4.jpg',
+      price: 3.99,
+      quantity: 50
+    },
+
+    {
+      name: 'Love at first sight',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'size5.jpg',
+      category: categories[0]._id,
+      price: 9.99,
+      quantity: 3
+    },
+    {
+      name: 'Flower Tower',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'size6.jpg',
+      category: categories[0]._id,
+      price: 6.99,
+      quantity: 6
+    },
+    {
+      name: 'Three is a team',
+      category: categories[0]._id,
+      description:
+        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+      image: 'size7.jpg',
       price: 7.99,
       quantity: 20
     },
     {
       name: 'Handmade Soap',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
+      image: 'size8.jpg',
       price: 3.99,
       quantity: 50
     },
+
     {
-      name: 'Set of Wooden Spoons',
+      name: 'Love',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'size9.jpg',
+      category: categories[0]._id,
+      price: 9.99,
+      quantity: 3
+    },
+    {
+      name: 'Trust',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'size10.jpg',
+      category: categories[0]._id,
+      price: 6.99,
+      quantity: 6
+    },
+    {
+      name: 'Hope',
+      category: categories[0]._id,
+      description:
+        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+      image: 'size11.jpg',
+      price: 7.99,
+      quantity: 20
+    },
+    {
+      name: 'Trinity',
+      category: categories[0]._id,
+      description:
+        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+      image: 'size12.jpg',
+      price: 3.99,
+      quantity: 50
+    },
+
+
+    {
+      name: 'Give me a hand',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'size13.jpg',
+      category: categories[0]._id,
+      price: 9.99,
+      quantity: 3
+    },
+    {
+      name: 'Bed Head',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'size14.jpg',
+      category: categories[0]._id,
+      price: 6.99,
+      quantity: 6
+    },
+    {
+      name: 'There is no Spoon',
+      category: categories[0]._id,
+      description:
+        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+      image: 'size15.jpg',
+      price: 7.99,
+      quantity: 20
+    },
+    {
+      name: 'White Island',
+      category: categories[0]._id,
+      description:
+        'small pot with a small plant',
+      image: 'size16.jpg',
+      price: 3.99,
+      quantity: 50
+    },
+
+
+
+    {
+      name: 'Little Gal',
       category: categories[1]._id,
       description:
         'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
