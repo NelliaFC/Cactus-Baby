@@ -169,11 +169,11 @@ db.once('open', async () => {
 
 
     {
-      name: 'Little Gal',
+      name: 'Starry night',
       category: categories[1]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
+        'Hexagonal shape pot for your inspiration',
+      image: 'cap3.jpg',
       price: 14.99,
       quantity: 100
     },
