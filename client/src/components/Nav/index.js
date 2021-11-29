@@ -3,6 +3,10 @@ import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 
 function Nav() {
+//reload function to the homepage
+  function Refresh() {
+    window.location.reload();
+  }
 
   function showNavigation() {
     if (Auth.loggedIn()) {
@@ -42,8 +46,10 @@ function Nav() {
   return (
     <header className="flex-row px-1">
       <h1>
-        <Link to="/">
-          Cactus Baby
+        <Link to="/" >
+        {/* refresh on clicking the nav bar to home page Cactus baby succulent tab */}
+        <a href="/" onClick={() => Refresh()}>
+          Cactus Baby</a>
         </Link>
       </h1>
 
