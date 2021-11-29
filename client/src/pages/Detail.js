@@ -81,16 +81,18 @@ function Detail() {
       {currentProduct ? (
         <div className="container my-1">
           <Link to="/">← Back</Link>
-
-          <h2>{currentProduct.name}</h2>
+<div style={{display: 'flex' , justifyContent: 'center' , flexDirection: 'column'}}>
+          <h2  style={{ marginRight: "auto" , marginLeft: "auto"}} >{currentProduct.name}</h2>
 
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
+            style={{maxWidth : "50%" , maxHeight: "50%" , marginRight: "auto" , marginLeft: "auto" , marginBottom: '10px'}}
+
           />
 
           <p>{currentProduct.description}</p>
-
+              </div>
           <p>
             <strong>Price:</strong>${currentProduct.price}{' '}
             <button onClick={addToCart}>Add to Cart</button>

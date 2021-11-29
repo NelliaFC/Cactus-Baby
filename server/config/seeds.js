@@ -9,7 +9,7 @@ db.once('open', async () => {
     { name: 'Plant Variety' },
     { name: 'Merchandise' },
     { name: 'Baby Cactus' },
-    { name: 'Toys' }
+    
   ]);
 
   console.log('categories seeded');
@@ -206,7 +206,7 @@ db.once('open', async () => {
     },
     {
       name: 'Spinning Top',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
       image: 'spinning-top.jpg',
       price: 1.99,
@@ -214,7 +214,7 @@ db.once('open', async () => {
     },
     {
       name: 'Set of Plastic Horses',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
       image: 'plastic-horses.jpg',
@@ -223,7 +223,7 @@ db.once('open', async () => {
     },
     {
       name: 'Teddy Bear',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
       image: 'teddy-bear.jpg',
@@ -232,7 +232,7 @@ db.once('open', async () => {
     },
     {
       name: 'Alphabet Blocks',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
       image: 'alphabet-blocks.jpg',

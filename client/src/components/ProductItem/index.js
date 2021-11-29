@@ -46,6 +46,8 @@ function ProductItem(item) {
         <img
           alt={name}
           src={`/images/${image}`}
+          style={{maxWidth : "100%" , maxHeight: "100%" }}
+
         />
         <p>{name}</p>
       </Link>
