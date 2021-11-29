@@ -6,9 +6,9 @@ db.once('open', async () => {
 
   const categories = await Category.insertMany([
     { name: 'Succulents' },
-    { name: 'Succulents [1]' },
-    { name: 'Electronics' },
-    { name: 'Books' },
+    { name: 'Plant Variety' },
+    { name: 'Merchandise' },
+    { name: 'Baby Cactus' },
     { name: 'Toys' }
   ]);
 
@@ -30,7 +30,7 @@ db.once('open', async () => {
       name: 'Another spiney Cactus',
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'cacti2.jpeg',
+      image: '3.jpeg',
       category: categories[0]._id,
       price: 6.99,
       quantity: 6
