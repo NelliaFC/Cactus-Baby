@@ -80,9 +80,9 @@ function Detail() {
     <>
       {currentProduct ? (
         <div className="container my-1">
-          <Link to="/">← Back</Link>
-<div style={{display: 'flex' , justifyContent: 'center' , flexDirection: 'column'}}>
-          <h2  style={{ marginRight: "auto" , marginLeft: "auto"}} >{currentProduct.name}</h2>
+          <Link to="/"><i class="fas fa-angle-double-left fa-1.5x"> go back</i></Link>
+          <div style={{display: 'flex' , justifyContent: 'center' , flexDirection: 'column'}}>
+          <h2  style={{ marginRight: "auto" , marginLeft: "auto", fontWeight: "bold" }}>{currentProduct.name}</h2>
 
           <img
             src={`/images/${currentProduct.image}`}
@@ -91,9 +91,10 @@ function Detail() {
 
           />
 
-          <p>{currentProduct.description}</p>
+          <p style={{ marginRight: "25%" , marginLeft: "25%", marginTop: "5px"}}>{currentProduct.description}</p>
               </div>
-          <p>
+          <p style={{ marginRight: "25%" , marginLeft: "25%"}}>
+
             <strong>Price:</strong>${currentProduct.price}{' '}
             <button onClick={addToCart}>Add to Cart</button>
             <button
