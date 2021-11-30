@@ -80,7 +80,7 @@ function Detail() {
     <>
       {currentProduct ? (
         <div className="container my-1">
-          <Link to="/"><i class="fas fa-angle-double-left fa-1.5x"> go back</i></Link>
+          <Link to="/main"><i class="fas fa-angle-double-left fa-1.5x"> go back</i></Link>
           <div style={{display: 'flex' , justifyContent: 'center' , flexDirection: 'column'}}>
           <h2  style={{ marginRight: "auto" , marginLeft: "auto", fontWeight: "bold" }}>{currentProduct.name}</h2>
 
