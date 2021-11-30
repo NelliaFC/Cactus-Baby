@@ -3,12 +3,18 @@ import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
 import img from "../img/blackandgold.jpg";
+import { Link } from "react-router-dom";
 
 const Land = () => {
   return (
     <div className="container">
       {/* <CategoryMenu /> */}
       <h1>This is the home page</h1>
+      <button className="btn success">
+        <Link to="/main">
+          Go to Home Page
+        </Link>
+      </button>
       <img style={{maxWidth : "50%" , maxHeight: "50%" , marginRight: "auto" , marginLeft: "auto" , marginBottom: '10px'}} src={img}></img>
     </div>
   );

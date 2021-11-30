@@ -1,6 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import './nav.css';
 
 function Nav() {
 //reload function to the homepage
@@ -46,20 +47,25 @@ function Nav() {
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1 className='mainHeader'>
-        <Link to="/" >
-        {/* refresh on clicking the nav bar to home page Cactus baby succulent tab */}
-        <a href="/" onClick={() => Refresh()}>
-          Cactus Baby
-          </a>
-        </Link>
-      </h1>
-
-      <nav>
-        {showNavigation()}
-      </nav>
-    </header>
+    <div className="total-container">
+      <header className="px-1 lr-div-header">
+        <div className="left-div">
+          <h1 className='mainHeader'>
+            <Link to="/" >
+            {/* refresh on clicking the nav bar to home page Cactus baby succulent tab */}
+            <a href="/" onClick={() => Refresh()}>
+              Cactus Baby
+              </a>
+            </Link>
+          </h1>
+        </div>
+        <div className="right-div">
+          <nav>
+            {showNavigation()}
+          </nav>
+        </div>
+      </header>
+    </div>
   );
 }
 
