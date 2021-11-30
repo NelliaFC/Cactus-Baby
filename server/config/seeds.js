@@ -6,9 +6,9 @@ db.once('open', async () => {
 
   const categories = await Category.insertMany([
     { name: 'Succulents' },
-    { name: 'Plant Variety' },
-    { name: 'Potted / Pots' },
-    { name: 'Baby Cactus' },
+    { name: 'Garden Sets' },
+    { name: 'Potted'  },
+    { name: 'For Babies' },
     
   ]);
 
@@ -169,39 +169,39 @@ db.once('open', async () => {
 
 
     {
-      name: 'Give me a hand',
+      name: 'Starfish',
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'size13.jpg',
+      image: 'plantvar.jpg',
       category: categories[1]._id,
-      price: 9.99,
+      price: 50.99,
       quantity: 3
     },
     {
-      name: 'Bed Head',
+      name: 'Beauties',
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'size14.jpg',
+      image: 'plantvar2.jpg',
       category: categories[1]._id,
-      price: 6.99,
+      price: 36.99,
       quantity: 6
     },
     {
-      name: 'There is no Spoon',
+      name: 'Color',
       category: categories[1]._id,
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'size15.jpg',
-      price: 7.99,
+      image: 'plantvar3.jpg',
+      price: 47.99,
       quantity: 20
     },
     {
       name: 'White Island',
       category: categories[1]._id,
       description:
-        'small pot with a small plant',
-      image: 'size16.jpg',
-      price: 3.99,
+        'lots and lots of them',
+      image: 'plantvar4.jpg',
+      price: 43.99,
       quantity: 50
     },
 
@@ -278,33 +278,7 @@ db.once('open', async () => {
       quantity: 2
     },
 
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[3]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[3]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: 'Alphabet Blocks',
-      category: categories[3]._id,
-      description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
-      price: 9.99,
-      quantity: 600
-    }
+    
   ]);
 
   console.log('products seeded');
