@@ -7,7 +7,7 @@ db.once('open', async () => {
   const categories = await Category.insertMany([
     { name: 'Succulents' },
     { name: 'Plant Variety' },
-    { name: 'Merchandise' },
+    { name: 'Potted / Pots' },
     { name: 'Baby Cactus' },
     
   ]);
@@ -45,11 +45,11 @@ db.once('open', async () => {
       quantity: 20
     },
     {
-      name: 'infinity Pool',
+      name: 'Birdeye View',
       category: categories[0]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'size4.jpg',
+        ' Love grows from Small to Big, this baby cactus, if nurtured properly and not watered too much will grow into a handsome fellah',
+      image: 'birdseyeview.jpg',
       price: 3.99,
       quantity: 50
     },
@@ -82,7 +82,7 @@ db.once('open', async () => {
       quantity: 20
     },
     {
-      name: 'Handmade Soap',
+      name: 'Little Star',
       category: categories[0]._id,
       description:
         'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
@@ -95,7 +95,7 @@ db.once('open', async () => {
       name: 'Love',
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'size9.jpg',
+      image: 'love.jpg',
       category: categories[0]._id,
       price: 9.99,
       quantity: 3
@@ -104,7 +104,7 @@ db.once('open', async () => {
       name: 'Trust',
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'size10.jpg',
+      image: 'trust2.jpg',
       category: categories[0]._id,
       price: 6.99,
       quantity: 6
@@ -114,7 +114,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'size11.jpg',
+      image: 'hope1.jpg',
       price: 7.99,
       quantity: 20
     },
@@ -169,38 +169,103 @@ db.once('open', async () => {
 
 
     {
-      name: 'Starry night',
+      name: 'Give me a hand',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'size13.jpg',
       category: categories[1]._id,
+      price: 9.99,
+      quantity: 3
+    },
+    {
+      name: 'Bed Head',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'size14.jpg',
+      category: categories[1]._id,
+      price: 6.99,
+      quantity: 6
+    },
+    {
+      name: 'There is no Spoon',
+      category: categories[1]._id,
+      description:
+        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+      image: 'size15.jpg',
+      price: 7.99,
+      quantity: 20
+    },
+    {
+      name: 'White Island',
+      category: categories[1]._id,
+      description:
+        'small pot with a small plant',
+      image: 'size16.jpg',
+      price: 3.99,
+      quantity: 50
+    },
+
+
+    {
+      name: 'Copper Pots',
+      category: categories[2]._id,
+      description:
+        'Hexagonal shape pot for your inspiration',
+      image: 'cat1.jpg',
+      price: 14.99,
+      quantity: 100
+    },
+    {
+      name: 'Freddi Marriage',
+      category: categories[2]._id,
+      description:
+        'Hexagonal shape pot for your inspiration',
+      image: 'FreddyMarriage.jpg',
+      price: 14.99,
+      quantity: 100
+    }, {
+      name: '"The Boat Cruise"',
+      category: categories[2]._id,
+      description:
+        'Hexagonal shape pot for your inspiration',
+      image: 'cat2.jpg',
+      price: 29.99,
+      quantity: 100
+    }, {
+      name: '"Starry Night"',
+      category: categories[2]._id,
       description:
         'Hexagonal shape pot for your inspiration',
       image: 'cap3.jpg',
       price: 14.99,
       quantity: 100
     },
+
+
     {
-      name: 'Camera',
-      category: categories[2]._id,
+      name: 'Cactus Onsie',
+      category: categories[3]._id,
       description:
         'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
-      price: 399.99,
+      image: 'kid5.jpg',
+      price: 39.99,
       quantity: 30
     },
     {
-      name: 'Tablet',
-      category: categories[2]._id,
+      name: 'Cactus drool prevention',
+      category: categories[3]._id,
       description:
         'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      price: 199.99,
+      image: 'kid4.jpg',
+      price: 19.99,
       quantity: 30
     },
     {
-      name: 'Tales at Bedtime',
+      name: 'Cactus Tee',
       category: categories[3]._id,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
+      image: 'kid3.jpg',
       price: 9.99,
       quantity: 100
     },
@@ -208,10 +273,11 @@ db.once('open', async () => {
       name: 'Spinning Top',
       category: categories[3]._id,
       description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
+      image: 'kid.jpg',
+      price: 49.99,
+      quantity: 2
     },
+
     {
       name: 'Set of Plastic Horses',
       category: categories[3]._id,

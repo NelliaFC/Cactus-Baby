@@ -11,13 +11,13 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <div className="flex-row">
-          <button className="mx-1">
+        <div className="flex-row mainButton">
+          <button className="btn success">
             <Link to="/orderHistory">
               Order History
             </Link>
           </button>
-          <button className="mx-1">
+          <button className="btn success">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               Logout
@@ -27,12 +27,14 @@ function Nav() {
       );
     } else {
       return (
-        <div className="flex-row">
+        <div className="flex-row mainButton" >
+
           <button className="btn success">
             <Link to="/signup">
               Signup
             </Link>
           </button>
+          
           <button className="btn success">
             <Link to="/login">
               Login

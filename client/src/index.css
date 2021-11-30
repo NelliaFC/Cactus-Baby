@@ -58,7 +58,12 @@ h6 {
 
 .success:hover {
   background-color: #04AA6D;
-  color: white;
+  color: black;
+}
+
+.mainButton {
+  margin-top: 0px;
+  padding: 15px; 
 }
 
 .mainHeader {
