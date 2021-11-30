@@ -53,12 +53,14 @@ h6 {
  /* Green */
 .success {
   border-color: #04AA6D;
-  color: green;
+  color: rgb(238, 247, 238);
+  background-color: var(--secondary)
+  
 }
 
 .success:hover {
   background-color: #04AA6D;
-  color: black;
+  color:black;
 }
 
 .mainButton {
