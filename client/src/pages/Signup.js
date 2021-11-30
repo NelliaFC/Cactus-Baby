@@ -20,6 +20,9 @@ function Signup(props) {
     });
     const token = mutationResponse.data.addUser.token;
     Auth.login(token);
+  
+      window.location.replace("http://localhost:3000/main")
+    
   };
 
   const handleChange = (event) => {

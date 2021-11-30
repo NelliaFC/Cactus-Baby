@@ -4,6 +4,7 @@ import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import { AnimationWrapper } from 'react-hover-animation';
 
 function ProductItem(item) {
   const {
@@ -43,12 +44,13 @@ function ProductItem(item) {
   return (
     <div className="card px-1 py-1">
       <Link to={`/products/${_id}`}>
+      <AnimationWrapper>
         <img
           alt={name}
           src={`/images/${image}`}
           style={{maxWidth : "100%" , maxHeight: "100%" }}
-
         />
+        </AnimationWrapper>
         <p>{name}</p>
       </Link>
       <div>

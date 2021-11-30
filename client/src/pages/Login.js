@@ -16,6 +16,7 @@ function Login(props) {
       });
       const token = mutationResponse.data.login.token;
       Auth.login(token);
+      window.location.replace("http://localhost:3000/main")
     } catch (e) {
       console.log(e);
     }

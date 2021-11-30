@@ -51,7 +51,8 @@ function Nav() {
         <Link to="/" >
         {/* refresh on clicking the nav bar to home page Cactus baby succulent tab */}
         <a href="/" onClick={() => Refresh()}>
-          Cactus Baby</a>
+          Cactus Baby
+          </a>
         </Link>
       </h1>
 
