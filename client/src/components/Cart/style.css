@@ -26,9 +26,11 @@
     cursor: pointer;
     color: var(--tertiary);
   }
+
   
   .cart .close:hover {
     text-decoration: underline;
+  
   }
   
   .cart-closed {

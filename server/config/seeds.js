@@ -6,10 +6,10 @@ db.once('open', async () => {
 
   const categories = await Category.insertMany([
     { name: 'Succulents' },
-    { name: 'Succulents [1]' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Garden Sets' },
+    { name: 'Potted'  },
+    { name: 'For Babies' },
+    
   ]);
 
   console.log('categories seeded');
@@ -18,112 +18,267 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Spiney Cactus',
+      name: 'Waterfall Lilly',
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cacti2.jpeg',
+      image: 'size1.jpg',
       category: categories[0]._id,
       price: 9.99,
       quantity: 3
     },
     {
-      name: 'Another spiney Cactus',
+      name: 'A Row of Rainbow',
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'cacti2.jpeg',
+      image: 'size2.jpg',
       category: categories[0]._id,
       price: 6.99,
       quantity: 6
     },
     {
-      name: 'Toilet Paper',
-      category: categories[1]._id,
+      name: 'Little Guy',
+      category: categories[0]._id,
       description:
         'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
+      image: 'size3.jpg',
       price: 7.99,
       quantity: 20
     },
     {
-      name: 'Handmade Soap',
-      category: categories[1]._id,
+      name: 'Birdeye View',
+      category: categories[0]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
+        ' Love grows from Small to Big, this baby cactus, if nurtured properly and not watered too much will grow into a handsome fellah',
+      image: 'birdseyeview.jpg',
       price: 3.99,
       quantity: 50
     },
+
     {
-      name: 'Set of Wooden Spoons',
+      name: 'Love at first sight',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'size5.jpg',
+      category: categories[0]._id,
+      price: 9.99,
+      quantity: 3
+    },
+    {
+      name: 'Flower Tower',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'size6.jpg',
+      category: categories[0]._id,
+      price: 6.99,
+      quantity: 6
+    },
+    {
+      name: 'Three is a team',
+      category: categories[0]._id,
+      description:
+        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+      image: 'size7.jpg',
+      price: 7.99,
+      quantity: 20
+    },
+    {
+      name: 'Little Star',
+      category: categories[0]._id,
+      description:
+        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+      image: 'size8.jpg',
+      price: 3.99,
+      quantity: 50
+    },
+
+    {
+      name: 'Love',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'love.jpg',
+      category: categories[0]._id,
+      price: 9.99,
+      quantity: 3
+    },
+    {
+      name: 'Trust',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'trust2.jpg',
+      category: categories[0]._id,
+      price: 6.99,
+      quantity: 6
+    },
+    {
+      name: 'Hope',
+      category: categories[0]._id,
+      description:
+        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+      image: 'hope1.jpg',
+      price: 7.99,
+      quantity: 20
+    },
+    {
+      name: 'Trinity',
+      category: categories[0]._id,
+      description:
+        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+      image: 'size12.jpg',
+      price: 3.99,
+      quantity: 50
+    },
+
+
+    {
+      name: 'Give me a hand',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'size13.jpg',
+      category: categories[0]._id,
+      price: 9.99,
+      quantity: 3
+    },
+    {
+      name: 'Bed Head',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'size14.jpg',
+      category: categories[0]._id,
+      price: 6.99,
+      quantity: 6
+    },
+    {
+      name: 'There is no Spoon',
+      category: categories[0]._id,
+      description:
+        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+      image: 'size15.jpg',
+      price: 7.99,
+      quantity: 20
+    },
+    {
+      name: 'White Island',
+      category: categories[0]._id,
+      description:
+        'small pot with a small plant',
+      image: 'size16.jpg',
+      price: 3.99,
+      quantity: 50
+    },
+
+
+
+    {
+      name: 'Starfish',
+      description:
+        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      image: 'plantvar.jpg',
+      category: categories[1]._id,
+      price: 50.99,
+      quantity: 3
+    },
+    {
+      name: 'Beauties',
+      description:
+        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+      image: 'plantvar2.jpg',
+      category: categories[1]._id,
+      price: 36.99,
+      quantity: 6
+    },
+    {
+      name: 'Color',
       category: categories[1]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
+        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+      image: 'plantvar3.jpg',
+      price: 47.99,
+      quantity: 20
+    },
+    {
+      name: 'White Island',
+      category: categories[1]._id,
+      description:
+        'lots and lots of them',
+      image: 'plantvar4.jpg',
+      price: 43.99,
+      quantity: 50
+    },
+
+
+    {
+      name: 'Copper Pots',
+      category: categories[2]._id,
+      description:
+        'Hexagonal shape pot for your inspiration',
+      image: 'cat1.jpg',
       price: 14.99,
       quantity: 100
     },
     {
-      name: 'Camera',
+      name: 'Freddi Marriage',
       category: categories[2]._id,
+      description:
+        'Hexagonal shape pot for your inspiration',
+      image: 'FreddyMarriage.jpg',
+      price: 14.99,
+      quantity: 100
+    }, {
+      name: '"The Boat Cruise"',
+      category: categories[2]._id,
+      description:
+        'Hexagonal shape pot for your inspiration',
+      image: 'cat2.jpg',
+      price: 29.99,
+      quantity: 100
+    }, {
+      name: '"Starry Night"',
+      category: categories[2]._id,
+      description:
+        'Hexagonal shape pot for your inspiration',
+      image: 'cap3.jpg',
+      price: 14.99,
+      quantity: 100
+    },
+
+
+    {
+      name: 'Cactus Onsie',
+      category: categories[3]._id,
       description:
         'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
-      price: 399.99,
+      image: 'kid5.jpg',
+      price: 39.99,
       quantity: 30
     },
     {
-      name: 'Tablet',
-      category: categories[2]._id,
+      name: 'Cactus drool prevention',
+      category: categories[3]._id,
       description:
         'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      price: 199.99,
+      image: 'kid4.jpg',
+      price: 19.99,
       quantity: 30
     },
     {
-      name: 'Tales at Bedtime',
+      name: 'Cactus Tee',
       category: categories[3]._id,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
+      image: 'kid3.jpg',
       price: 9.99,
       quantity: 100
     },
     {
       name: 'Spinning Top',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
+      image: 'kid.jpg',
+      price: 49.99,
+      quantity: 2
     },
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[4]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: 'Alphabet Blocks',
-      category: categories[4]._id,
-      description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
-      price: 9.99,
-      quantity: 600
-    }
+
+    
   ]);
 
   console.log('products seeded');
