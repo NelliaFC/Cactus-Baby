@@ -22,7 +22,7 @@ function Nav() {
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
-          </button>
+          </button>``
         </div>
       );
     } else {
@@ -50,9 +50,7 @@ function Nav() {
       <h1 className='mainHeader'>
         <Link to="/" >
         {/* refresh on clicking the nav bar to home page Cactus baby succulent tab */}
-        <a href="/" onClick={() => Refresh()}>
           Cactus Baby
-          </a>
         </Link>
       </h1>
 

@@ -20,7 +20,7 @@
   }
   
   .cart .close {
-    position: absolute;
+    position: fixed;
     top: .5rem;
     right: .5rem;
     cursor: pointer;
@@ -63,7 +63,7 @@
   
   @media screen and (max-width: 768px) {
     .cart {
-      position: relative;
+      position: fixed;
       max-width: 100%;
       max-height: auto;
       box-shadow: none;
@@ -71,7 +71,7 @@
     }
   
     .cart-closed {
-      position: relative;
+      position: fixed;
       margin: 0 auto;
     }
   }

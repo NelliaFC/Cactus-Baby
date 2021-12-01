@@ -1,0 +1,25 @@
+.total-container {
+  width: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  display: flexbox;
+}
+
+.lr-div-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-div {
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+.center-div {
+  display: flex;
+  align-items: center;
+
+}
