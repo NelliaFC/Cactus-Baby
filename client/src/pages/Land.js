@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../img/Cactus Baby.jpg";
-import { Link } from "react-router-dom";
+
 
 const Land = () => {
   return (

@@ -29,7 +29,13 @@ function Nav() {
     } else {
       return (
         <div className="flex-row mainButton" >
-        
+          
+          <button className="btn success">
+          <Link to="/">
+              Home
+          </Link>
+          </button>
+          
           <button className="btn success">
             <Link to="/main">
               Browse
@@ -47,6 +53,7 @@ function Nav() {
               Login
             </Link>
           </button>
+
         </div>
       );
     }

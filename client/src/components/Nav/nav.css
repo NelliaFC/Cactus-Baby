@@ -1,8 +1,8 @@
 .total-container {
-  width: 100%;
+  width: auto;
   flex-direction: row;
   justify-content: space-around;
-  display: flex;
+  display: flexbox;
 }
 
 .lr-div-header {
