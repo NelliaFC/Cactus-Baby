@@ -65,10 +65,8 @@ function Nav() {
         <div className="left-div">
           <h1 className='mainHeader'>
             <Link to="/" >
-            {/* refresh on clicking the nav bar to home page Cactus baby succulent tab */}
-            <a href="/" onClick={() => Refresh()}>
-              Cactus Baby
-            </a>
+            {/* refresh on clicking the nav bar to home page Cactus baby succulent tab */}            
+              Cactus Baby     
             </Link>
           </h1>
         </div>
