@@ -19,7 +19,7 @@ function Nav() {
           </button>
           <button className="btn success">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/main" onClick={() => Auth.logout()}>
+            <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
           </button>``
