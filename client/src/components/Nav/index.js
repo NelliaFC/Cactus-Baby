@@ -40,6 +40,13 @@ function Nav() {
               Login
             </Link>
           </button>
+        
+          <button className="btn success">
+            <Link to="/main">
+              Browse
+            </Link>
+          </button>
+
         </div>
       );
     }
