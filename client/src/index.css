@@ -1,6 +1,6 @@
 :root {
-  --primary: #99f19d;
-  --secondary: #ee8fa3;
+  --primary: #439e66;
+  --secondary: #f7bfcb;
   --tertiary: #31181e;
   --light: #fafafa;
   --dark: #272f32;
@@ -52,15 +52,16 @@ h6 {
 }
  /* Green */
 .success {
-  border-color: #04AA6D;
+  border-color: var(--primary);
   color: rgb(238, 247, 238);
   background-color: var(--secondary)
   
 }
 
 .success:hover {
-  background-color: #04AA6D;
+  background-color: rgb(93, 131, 93);
   color:black;
+  border-color:whitesmoke;
 }
 
 .mainButton {
@@ -72,6 +73,7 @@ h6 {
   margin: 24px, 0px !important;
   padding-left: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #333
   
 
 }
