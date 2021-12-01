@@ -43,7 +43,7 @@ function CategoryMenu() {
 
   return (
     <div style={{display: 'flex',
-     justifyContent: 'flex-end',
+     justifyContent: 'center',
     }}>
 
       <br/>

@@ -15,11 +15,11 @@
 .left-div {
   display: flex;
   align-items: flex-start;
-  margin-left: 430px;
+  
 }
 
 .right-div {
   display: flex;
   align-items: center;
-  margin-right: 400px;
+
 }
