@@ -11,7 +11,7 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <div className="flex-row mainButton">
+        <div className="flex-row-2 mainButton">
           <button className="btn success">
             <Link to="/orderHistory">
               Order History
@@ -27,7 +27,7 @@ function Nav() {
       );
     } else {
       return (
-        <div className="flex-row mainButton" >
+        <div className="flex-row-2 mainButton" >
 
           <button className="btn success">
             <Link to="/signup">
@@ -46,7 +46,7 @@ function Nav() {
   }
 
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row-2 px-1">
       <h1 className='mainHeader'>
         <Link to="/" >
         {/* refresh on clicking the nav bar to home page Cactus baby succulent tab */}
