@@ -71,7 +71,7 @@
     }
   
     .cart-closed {
-      position: fixed;
+      position: flex;
       margin: 0 auto;
     }
   }

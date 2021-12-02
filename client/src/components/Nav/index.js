@@ -1,7 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-
+import "./nav.css";
 function Nav() {
 //reload function to the homepage
   function Refresh() {
@@ -22,7 +22,7 @@ function Nav() {
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
-          </button>``
+          </button>
         </div>
       );
     } else {
@@ -38,6 +38,12 @@ function Nav() {
           <button className="btn success">
             <Link to="/login">
               Login
+            </Link>
+          </button>
+
+          <button className="btn success">
+            <Link to="/main">
+              Browse
             </Link>
           </button>
         </div>

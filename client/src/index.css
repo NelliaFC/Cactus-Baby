@@ -185,11 +185,11 @@ input:focus {
   flex-wrap: wrap;
 }
 
-.flex-row-2 {
+/* .flex-row-2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
-}
+} */
 
 .space-between {
   justify-content: space-between;
