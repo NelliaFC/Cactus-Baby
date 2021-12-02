@@ -1,4 +1,6 @@
 # Cactus-Baby
+An E-Commerce website for all things Succulents. BABY CACTUS is a
+simple and user-friendly interface with ability to create an account and save your user history, take payment and have off-line access. 
 
 ## Description
 
@@ -26,16 +28,22 @@ An E-Commerce website selling succulents and cacti to plant lovers all over the 
 * Express
 * React
 * Node
+* ServiceWorker
+* Herokuapp
+* 
+* Bootstrap
+
 
 ## Contributing
 
-#### Julian Perez - Back-end Development
-#### Cristian Farias - Front-end Styling & Layout
-#### Nelia Fleurova-Char - Database Seeding & Product Layout
-#### Waleed Baig - Page Routing & Home/Main Page Layout
+#### Julian Perez - Back-end Development, Heroku Deployment
+#### Cristian Farias - Front-end Styling & Layout, Heroku deployment and
+#### Nellia Fleurova-Char - Front-End Database Seeding & Product Layout, Heroku Deployment
+#### Waleed Baig - Page Routing & Home/Main Page Layout, Heroku Deployment
 
 ## Delpoyed Website
-https://floating-river-98581.herokuapp.com/
+https://intense-peak-73506.herokuapp.com/
+
 ## Screenshot
 ![Screenshot](./client/public/images/cactusBabySS.jpg)
 
