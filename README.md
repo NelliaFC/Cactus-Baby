@@ -34,9 +34,11 @@ An E-Commerce website selling succulents and cacti to plant lovers all over the 
 #### Nelia Fleurova-Char - Database Seeding & Product Layout
 #### Waleed Baig - Page Routing & Home/Main Page Layout
 
-## Website
-### Screenshot
+## Delpoyed Website
+https://floating-river-98581.herokuapp.com/
+## Screenshot
 ![Screenshot](./client/public/images/cactusBabySS.jpg)
+
 
 
 
