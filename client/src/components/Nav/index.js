@@ -1,7 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-
+import "./nav.css";
 function Nav() {
 //reload function to the homepage
   function Refresh() {
@@ -11,7 +11,7 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <div className="flex-row mainButton">
+        <div className="flex-row-2 mainButton">
           <button className="btn success">
             <Link to="/orderHistory">
               Order History
@@ -22,12 +22,12 @@ function Nav() {
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
-          </button>``
+          </button>
         </div>
       );
     } else {
       return (
-        <div className="flex-row mainButton" >
+        <div className="flex-row-2 mainButton" >
 
           <button className="btn success">
             <Link to="/signup">
@@ -40,20 +40,18 @@ function Nav() {
               Login
             </Link>
           </button>
-        
           <button className="btn success">
             <Link to="/main">
               Browse
             </Link>
           </button>
-
         </div>
       );
     }
   }
 
   return (
-    <header className="flex-row px-1">
+    <header className="flex-row-2 px-1">
       <h1 className='mainHeader'>
         <Link to="/" >
         {/* refresh on clicking the nav bar to home page Cactus baby succulent tab */}
