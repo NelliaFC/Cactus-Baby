@@ -157,7 +157,7 @@ db.once('open', async () => {
       quantity: 20
     },
     {
-      name: 'White Island',
+      name: 'Little Me',
       category: categories[0]._id,
       description:
         'Small pot with a small plant for a large heart.',
