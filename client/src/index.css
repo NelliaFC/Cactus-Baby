@@ -132,7 +132,6 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  /* border-radius: .5rem; */
   border: none;
   outline: none;
   cursor: pointer;
@@ -186,12 +185,6 @@ input:focus {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* .flex-row-2 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-} */
 
 .space-between {
   justify-content: space-between;

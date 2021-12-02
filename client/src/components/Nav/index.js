@@ -3,11 +3,6 @@ import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import "./nav.css";
 function Nav() {
-//reload function to the homepage
-  function Refresh() {
-    window.location.reload();
-  }
-
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -40,7 +35,6 @@ function Nav() {
               Login
             </Link>
           </button>
-
           <button className="btn success">
             <Link to="/main">
               Browse
