@@ -29,14 +29,13 @@ An E-Commerce website selling succulents and cacti to plant lovers all over the 
 
 ## Contributing
 
-Julian Perez - Back-end Development
-Cristian Farias - Front-end Styling & Layout
-Nelia Fleurova-Char - Database Seeding & Product Layout
-Waleed Baig - Page Routing & Home/Main Page Layout
+#### Julian Perez - Back-end Development
+#### Cristian Farias - Front-end Styling & Layout
+#### Nelia Fleurova-Char - Database Seeding & Product Layout
+#### Waleed Baig - Page Routing & Home/Main Page Layout
 
 ## Website
-
-## Screenshot
+### Screenshot
 ![Screenshot](./client/public/images/cactusBabySS.jpg)
 
 
