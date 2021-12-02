@@ -42,9 +42,12 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+        <div >
+        <Nav />
+        </div>
         <div>
           <StoreProvider>
-            <Nav />
+            
             <Switch>
               <Route exact path="/" component={Land} />
               <Route exact path="/main" component={Main} />
