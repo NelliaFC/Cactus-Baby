@@ -30,7 +30,7 @@ An E-Commerce website selling succulents and cacti to plant lovers all over the 
 ## Contributing
 
 Julian Perez - Back-end Development
-Christian Farias - Front-end Styling & Layout
+Cristian Farias - Front-end Styling & Layout
 Nelia Fleurova-Char - Database Seeding & Product Layout
 Waleed Baig - Page Routing & Home/Main Page Layout
 
